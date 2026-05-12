@@ -161,9 +161,9 @@
 .gallery {
   display: grid;
   gap: var(--card-gap);
-
   padding-inline: 10px;
 }
+
 .title-tips {
   inline-size: 100%;
 }
@@ -445,8 +445,7 @@
     display: grid;
     align-items: stretch;
     overflow: hidden;
-    display: block;
-  }
+   }
 
   .gallery__item img {
     width: 100%;
@@ -546,6 +545,7 @@
     bottom: 20px;
     left: 20px;
   }
+
   .article-multitasking,
   .article-concentration,
   .article-tips,
