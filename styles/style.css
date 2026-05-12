@@ -161,7 +161,7 @@
 .gallery {
   display: grid;
   gap: var(--card-gap);
-  padding-inline: var(--page-padding);
+
   padding-inline: 10px;
 }
 .title-tips {
@@ -432,9 +432,6 @@
     grid-auto-flow: row;
     gap: 20px;
   }
-  .article__subtitle-gallery {
-    margin-bottom: 10px;
-  }
 
   .gallery__image {
     width: 100%;
@@ -481,7 +478,7 @@
 
   .footer__text {
     text-align: center;
-    margin-top: 7px;
+    margin-top: 37px;
     width: fit-content;
     padding: 0;
     margin: 0;
@@ -493,9 +490,6 @@
   .footer::after {
     bottom: 1px;
     left: 18px;
-  }
-  .footer__text {
-    margin-top: 37px;
   }
 }
 
