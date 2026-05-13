@@ -22,6 +22,11 @@
   background-attachment: fixed;
   background-size: cover;
 }
+.header,
+.footer {
+  min-block-size: 100vh;
+  min-height: 668px;
+}
 
 .header__theme-menu {
   display: flex;
@@ -284,7 +289,6 @@
 }
 .footer {
   position: relative;
-  min-block-size: 668px;
   inline-size: 100%;
   padding: var(--page-padding);
   display: grid;
@@ -322,8 +326,9 @@
 /* ------------TABLET------------ */
 
 @media (width >= 768px) {
-  .header {
-    min-block-size: 1024px;
+  .header,
+  .footer {
+    min-height: 1024px;
     padding: 20px;
   }
 
@@ -391,7 +396,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    padding-inline: 19px;
+
     padding-block: 60px;
   }
 
@@ -406,7 +411,7 @@
   .article-tips {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    padding-block: 22px 31px;
+    padding-block: 20px 31px;
   }
   .article-tips > .article__title {
     grid-column: 1;
@@ -420,7 +425,7 @@
   }
 
   .gallery {
-    padding-block: 49px 40px;
+    padding-block: 50px 40px;
   }
   .article__subtitle-gallery {
     margin-bottom: 10px;
@@ -442,10 +447,10 @@
   }
 
   .gallery__item {
-    display: grid;
     align-items: stretch;
     overflow: hidden;
-   }
+    display: block;
+  }
 
   .gallery__item img {
     width: 100%;
@@ -481,7 +486,6 @@
   .footer {
     display: grid;
     place-items: center;
-    min-block-size: 1024px;
   }
 
   .footer__text {
@@ -492,8 +496,8 @@
     margin-left: 1px;
   }
   .footer::before {
-    top: 38px;
-    right: 22px;
+    top: 40px;
+    right: 20px;
   }
   .footer::after {
     bottom: 1px;
@@ -504,8 +508,9 @@
 /* ----------DESKTOP----------- */
 
 @media (min-width: 1024px) {
-  .header {
-    min-block-size: 768px;
+  .header,
+  .footer {
+    min-height: 768px;
     padding: var(--page-padding);
   }
 
@@ -542,7 +547,7 @@
   }
 
   .decorated-element::after {
-    bottom: 20px;
+    bottom: 18px;
     left: 20px;
   }
 
@@ -563,16 +568,21 @@
     grid-column: 1;
     max-inline-size: 315px;
     padding-right: 10%;
-    margin-top: 3px;
-    transform: translateX(-3px);
   }
 
   .article-multitasking .card {
     grid-column: 2;
   }
+
   .article__subtitle {
     inline-size: 100%;
   }
+
+  .article__subtitle-multitasking,
+  .article__subtitle-dofamin {
+    max-inline-size: calc(100% - 6px);
+  }
+
   .article-concentration {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -668,20 +678,16 @@
     grid-row: 2;
   }
 
-  .footer {
-    min-block-size: 768px;
-  }
-
   .footer__text {
     margin-top: 7px;
     padding: 0;
   }
   .footer::before {
-    top: 20px;
+    top: 25px;
     right: 20px;
   }
   .footer::after {
-    bottom: 20px;
+    bottom: 15px;
     left: 20px;
   }
 }
