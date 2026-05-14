@@ -315,11 +315,13 @@
 
 @media (width >= 768px) {
   .header {
-    min-height: 1024px;
     padding: 20px 20px 20px 0;
-    box-sizing: border-box;
   }
-
+  .header,
+  .footer {
+    min-block-size: 1024px;
+    block-size: 100vh;
+  }
   .header__theme-menu {
     margin-top: 0;
     align-self: center;
@@ -471,7 +473,6 @@
   }
 
   .footer {
-    min-height: 1024px;
     display: grid;
     place-items: center;
     padding: 0 20px;
@@ -513,7 +514,8 @@
 @media (min-width: 1024px) {
   .header,
   .footer {
-    min-height: 768px;
+    min-block-size: 768px;
+    block-size: 100vh;
     padding: 20px 20px 20px 0;
   }
 
