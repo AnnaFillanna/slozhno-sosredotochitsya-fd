@@ -1,7 +1,7 @@
 .page {
   display: grid;
   /* min-inline-size: 375px; */
-  min-width: 320px;
+  min-width: 375px;
   min-block-size: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -23,7 +23,7 @@
 .header,
 .footer {
   min-block-size: 668px;
-  inline-size: 100%;
+  block-size: 100vh;
   padding: 10px;
 }
 
@@ -220,7 +220,7 @@
 .article-concentration p,
 .article-tips p {
   margin: 0;
-  line-height: 23.4px;
+  line-height: var(--line-height-base);
   padding-top: 10px;
 }
 
@@ -286,7 +286,7 @@
 .footer__text {
   text-align: center;
   text-transform: lowercase;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 
   max-width: 100%;
 
@@ -400,7 +400,7 @@
   .article-tips {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    padding-block: 20px 31px;
+    padding-block: 20px 60px;
   }
   .article-tips > .article__title {
     grid-column: 1;
@@ -414,7 +414,7 @@
   }
 
   .gallery {
-    padding-block: 50px 60px;
+    padding-block: 20px 60px;
     display: grid;
     gap: var(--card-gap);
   }
