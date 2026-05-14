@@ -1,10 +1,7 @@
-
-
 :root {
   --mainfont: 'IBM Plex Mono', monospace;
 
   --font-size-base: 18px;
-  --font-size-large: 120px;
 
   --font-weight-base: 700;
   --font-weight-small: 400;
@@ -24,4 +21,3 @@
   --section-title-bg: #ff0070;
   --bg-image: url('../images/cover-image-dark.png');
 }
-

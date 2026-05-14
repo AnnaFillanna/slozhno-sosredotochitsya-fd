@@ -28,6 +28,7 @@
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
+              type="button"
               class="header__theme-menu-button header__theme-menu-button_type_light"
               data-theme="light"
             >
@@ -36,15 +37,17 @@
           </li>
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+              type="button"
+              class="header__theme-menu-button header__theme-menu-button_active"
               data-theme="auto"
-              disabled
+              aria-disabled="true"
             >
               Авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
+              type="button"
               class="header__theme-menu-button header__theme-menu-button_type_dark"
               data-theme="dark"
             >
@@ -54,7 +57,7 @@
         </ul>
       </nav>
 
-      <h1 class="header__title" aria-hidden="true">no focus</h1>
+      <h1 class="header__title">no focus</h1>
       <span class="rec" aria-hidden="true">REC</span>
 
       <p class="header__text title-decor">
@@ -199,53 +202,49 @@
         <h3 class="article__subtitle article__subtitle-gallery">
           А можно в картинках?
         </h3>
+
         <div class="gallery__grid-container">
-          <picture class="gallery__item">
-            <source srcset="./images/sunset.png" type="image/png" />
+          <div class="gallery__item">
             <img
               src="./images/sunset.png"
               alt="Закат"
-              class="gallery__image_sunset"
+              class="gallery__image"
               loading="lazy"
             />
-          </picture>
+          </div>
 
-          <picture class="gallery__item">
-            <source srcset="./images/ice-cream.png" type="image/png" />
+          <div class="gallery__item">
             <img
               src="./images/ice-cream.png"
               alt="Мороженое"
-              class="gallery__image_ice-cream"
+              class="gallery__image"
               loading="lazy"
             />
-          </picture>
-          <picture class="gallery__item">
-            <source srcset="./images/tape.png" type="image/png" />
+          </div>
+          <div class="gallery__item">
             <img
               src="./images/tape.png"
               alt="Кассеты"
-              class="gallery__image_tape"
+              class="gallery__image"
               loading="lazy"
             />
-          </picture>
-          <picture class="gallery__item">
-            <source srcset="./images/books.png" type="image/png" />
+          </div>
+          <div class="gallery__item">
             <img
               src="./images/books.png"
               alt="Книги"
-              class="gallery__image_books"
+              class="gallery__image"
               loading="lazy"
             />
-          </picture>
-          <picture class="gallery__item">
-            <source srcset="./images/street.png" type="image/png" />
+          </div>
+          <div class="gallery__item">
             <img
               src="./images/street.png"
               alt="Улица"
-              class="gallery__image_street"
+              class="gallery__image"
               loading="lazy"
             />
-          </picture>
+          </div>
         </div>
       </section>
     </main>
