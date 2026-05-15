@@ -1,6 +1,5 @@
 .page {
   display: grid;
-  /* min-inline-size: 375px; */
   min-width: 375px;
   min-block-size: 100vh;
   background-color: var(--bg-color);
@@ -221,7 +220,7 @@
 .article-tips p {
   margin: 0;
   line-height: var(--line-height-base);
-  padding-top: 10px;
+  padding-block-start: 10px;
 }
 
 .article-concentration {
@@ -229,7 +228,7 @@
   gap: 20px;
   font-weight: var(--font-weight-small);
   font-size: var(--font-size-base);
-  padding-top: 30px;
+  padding-block-start: 30px;
 }
 
 .article-concentration .article__title {
@@ -238,7 +237,7 @@
 .article__text-concentration,
 .article__text-eat,
 .article__text-gadgets {
-  padding-top: 10px;
+  padding-block-start: 10px;
 }
 
 .nowrap {
@@ -340,7 +339,6 @@
   .header__text {
     justify-self: end;
     inline-size: 364px;
-    /* padding-right: 5%; */
   }
 
   .decorated-element::before {
@@ -372,7 +370,7 @@
   }
   .article-multitasking {
     grid-template-columns: 1fr 2fr;
-    padding-top: 60px;
+    padding-block-start: 60px;
   }
 
   .article__title {
@@ -386,9 +384,8 @@
   .article-concentration {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: var(--card-gap);
     padding-block: 60px 60px;
-    padding-right: 17px;
   }
 
   .article__title-concentration {
@@ -401,7 +398,7 @@
   }
   .article-tips {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: var(--card-gap);
     padding-block: 20px 60px;
   }
   .article-tips > .article__title {
@@ -567,14 +564,13 @@
     grid-template-columns: 1fr 2fr;
     padding-block: 60px 20px;
     gap: 10px;
-    /* padding-right: 17px; */
+
     padding-inline: var(--page-padding);
   }
 
   .article-multitasking .article__title {
     grid-column: 1;
     max-inline-size: 315px;
-    padding-right: 17px;
   }
 
   .article-multitasking .card {
@@ -616,7 +612,7 @@
 
   .article-tips {
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    gap: var(--text-gap);
     padding-block: 20px 60px;
   }
 
