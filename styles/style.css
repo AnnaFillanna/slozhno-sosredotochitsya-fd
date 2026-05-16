@@ -27,7 +27,7 @@
   min-block-size: 668px;
   block-size: 100vh;
   padding-block: 10px;
-  padding-inline: 10px 0;
+  padding-inline: 10px;
 }
 
 .header__theme-menu {
