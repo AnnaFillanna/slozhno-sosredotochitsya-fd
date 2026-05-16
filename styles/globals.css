@@ -54,3 +54,6 @@ img {
   block-size: auto;
   display: block;
 }
+.header__theme-menu-button_active {
+ pointer-events: none;
+}
