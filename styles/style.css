@@ -26,7 +26,8 @@
 .footer {
   min-block-size: 668px;
   block-size: 100vh;
-  padding: 10px;
+  padding-block: 10px;
+  padding-inline: 10px 0;
 }
 
 .header__theme-menu {
@@ -46,7 +47,6 @@
   gap: var(--text-gap);
 }
 
-/* === КНОПКИ ТЕМ === */
 .header__theme-menu-button {
   font-family: 'IBM Plex Mono', monospace;
   font-size: var(--font-size-base);
@@ -168,7 +168,7 @@
 }
 
 .article-multitasking {
-  padding-block: 40px 20px;
+  padding-block-start: 40px;
 }
 
 .article__text-multitasking {
@@ -176,12 +176,12 @@
 }
 
 .article__text-dofamin {
-  padding-block-start: 10px;
+  padding-block-start: 20px;
 }
 
 .article-concentration,
 .article-tips {
-  padding-top: var(--section-gap);
+  padding-block-start: var(--section-gap);
 }
 
 .article__title {
@@ -220,7 +220,7 @@
   gap: 20px;
   font-weight: var(--font-weight-small);
   font-size: var(--font-size-base);
-  padding-block-start: 30px;
+  padding-block-start: 50px;
 }
 
 .article-concentration .article__title {
@@ -268,6 +268,7 @@
 .footer {
   position: relative;
   padding: 10px;
+
   display: grid;
   place-items: center;
 }
